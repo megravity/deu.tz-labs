@@ -1,0 +1,14 @@
+{
+  "name": "labs",
+  "description": "Monorepo for the labs platform — containing the main web app, shared libraries, and infrastructure configuration. Central entry point for development, CI/CD, and deployment.",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {},
+  "keywords": [],
+  "author": "Marvin Deutz - deu.tz",
+  "license": "ISC",
+  "packageManager": "pnpm@10.13.1",
+  "devDependencies": {
+    "@biomejs/biome": "2.2.2"
+  }
+}

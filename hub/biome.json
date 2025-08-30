@@ -1,0 +1,46 @@
+{
+  "$schema": "https://biomejs.dev/schemas/2.2.2/schema.json",
+  "extends": ["../biome.json"],
+  "root": false,
+  "overrides": [
+    {
+      "includes": [
+        "**/*.svelte",
+        "**/*.astro",
+        "**/*.vue",
+        "src/pages/**/*.astro",
+        "src/layouts/**/*.astro"
+      ],
+      "linter": {
+        "rules": {
+          "style": {
+            "useConst": "off",
+            "useImportType": "off"
+          },
+          "correctness": {
+            "noUnusedVariables": "off",
+            "noUnusedImports": "off"
+          }
+        }
+      }
+    }
+  ],
+  "files": {
+    "includes": ["**/*.ts", "**/*.js", "!node_modules", "!dist"]
+  },
+  "formatter": {
+    "enabled": true,
+    "indentStyle": "space",
+    "includes": ["**/*.astro", "**/*.ts", "**/*.js", "!node_modules", "!dist"]
+  },
+  "linter": {
+    "enabled": true,
+    "rules": {
+      "recommended": true,
+      "style": {
+        "noCommonJs": "on",
+        "useSelfClosingElements": "on"
+      }
+    }
+  }
+}

@@ -1,0 +1,10 @@
+@import "tailwindcss";
+
+@font-face {
+  src: url("/fonts/helvetica-neue.woff2");
+  font-family: "HelveticaNeue";
+}
+
+@theme {
+  --font-sans: "HelveticaNeue"
+}
