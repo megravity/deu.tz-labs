@@ -29,3 +29,5 @@ yarn-error.log*
 
 # Experiment build outputs in public (will be copied by build process)
 public/experiments/*/
+
+.wrangler

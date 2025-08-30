@@ -1,7 +1,12 @@
 ---
-import Layout from "../layouts/layout.astro"
+import Footer from "../layouts/Footer.astro"
+import Skeleton from "../layouts/Skeleton.astro"
 ---
 
-<Layout>
-  <h1 class="bg-amber-300 text-9xl text-shadow-orange-900">Astro</h1>
-</Layout>
+<Skeleton>
+  <h1 class="text-foreground text-center text-7xl">
+    <span class="font-display outline-highlight-text">deu.tz</span>
+    <span class="font-sans-bold tracking-tighter">- LABS</span>
+  </h1>
+  <Footer />
+</Skeleton>

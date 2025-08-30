@@ -5,6 +5,40 @@
   font-family: "HelveticaNeue";
 }
 
-@theme {
-  --font-sans: "HelveticaNeue"
+@font-face {
+  src: url("/fonts/helvetica-neue-thin.woff2");
+  font-family: "HelveticaNeueThin";
+}
+
+@font-face {
+  src: url("/fonts/dx-bloop.otf");
+  font-family: "DxBloop";
+}
+
+@theme inline {
+  --font-display: "DxBloop";
+  --font-sans-bold: "HelveticaNeue";
+  --font-sans: "HelveticaNeueThin";
+
+  --color-background: #1A1D20;
+  --color-foreground: #FFFFFF;
+  --color-highlight: #F7ACCF;
+
+  --shadow-text-offset: 2px;
+  --shadow-text-offset-negative: calc(var(--shadow-text-offset) * -1);
+  --shadow-text-blur: 6px;
+  
+}
+
+@utility outline-highlight-text {
+  color: var(--color-foreground);
+  text-shadow:
+    var(--shadow-text-offset-negative) var(--shadow-text-offset-negative) var(--shadow-text-blur) var(--color-highlight),  
+    var(--shadow-text-offset) var(--shadow-text-offset-negative) var(--shadow-text-blur) var(--color-highlight),
+    var(--shadow-text-offset-negative) var(--shadow-text-offset) var(--shadow-text-blur) var(--color-highlight),
+    var(--shadow-text-offset) var(--shadow-text-offset) var(--shadow-text-blur) var(--color-highlight);
+}
+
+body {
+  background-color: var(--color-background);
 }

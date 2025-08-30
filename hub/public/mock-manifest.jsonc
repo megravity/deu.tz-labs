@@ -1,0 +1,36 @@
+{
+  "experiments": [
+    {
+      "id": "experiment-nextjs-dashboard",
+      "title": "Next.js Analytics Dashboard",
+      "description": "Real-time dashboard built with Next.js and Chart.js",
+      "framework": "Next.js",
+      "status": "completed",
+      "deploymentType": "integrated",
+      "url": "/experiments/nextjs-dashboard",
+      "sourceRepo": "https://github.com/yourname/experiment-nextjs-dashboard"
+      // ... other fields
+    },
+    {
+      "id": "experiment-solid-game",
+      "title": "SolidJS Memory Game",
+      "description": "Interactive memory card game exploring SolidJS",
+      "framework": "SolidStart",
+      "status": "completed",
+      "deploymentType": "external",
+      "url": "https://solid-game.yourname.dev",
+      "sourceRepo": "https://github.com/yourname/experiment-solid-game"
+      // ... other fields
+    },
+    {
+      "id": "experiment-tanstack-portfolio",
+      "title": "TanStack Router Portfolio",
+      "framework": "TanStack Start",
+      "status": "planning",
+      "deploymentType": "planned",
+      "url": null,
+      "sourceRepo": "https://github.com/yourname/experiment-tanstack-portfolio"
+      // ... other fields
+    }
+  ]
+}
