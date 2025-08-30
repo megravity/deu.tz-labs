@@ -18,9 +18,19 @@
       "quoteStyle": "double"
     }
   },
+  "css": {
+    "formatter": {
+      "enabled": true,
+      "indentStyle": "space"
+    },
+    "linter": {
+      "enabled": true
+    }
+  },
   "json": {
     "formatter": {
-      "trailingCommas": "none"
+      "trailingCommas": "none",
+      "indentStyle": "space"
     },
     "parser": {
       "allowTrailingCommas": true
