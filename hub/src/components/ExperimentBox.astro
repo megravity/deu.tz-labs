@@ -1,0 +1,24 @@
+---
+import { CardData } from "../types/types";
+
+export interface Props {
+  cardData: CardData;
+}
+
+const { cardData } = Astro.props;
+console.log(cardData);
+---
+
+<div
+  id={cardData.id}
+  class="text-background relative flex aspect-square h-64 flex-col justify-between rounded-md bg-white px-3 py-8 outline-2 outline-white">
+  <p
+    class="bg-highlight absolute -top-3 -left-3 rounded-sm px-2 py-1 text-white">
+    {cardData.framework}
+  </p>
+  <h3 class="text-xl">{cardData.title}</h3>
+  <div class="font-sans-thin flex justify-between text-2xl">
+    <a href={cardData.url}>Live</a>
+    <a href={cardData.sourceRepo}>Code</a>
+  </div>
+</div>

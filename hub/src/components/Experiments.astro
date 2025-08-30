@@ -1,0 +1,14 @@
+---
+import { experiments } from "../../public/mock-manifest.json";
+import { CardData } from "../types/types";
+
+import ExperimentBox from "./ExperimentBox.astro";
+---
+
+<div class="mt-14 flex justify-center gap-8">
+  {
+    (experiments as CardData[]).map((exp: CardData) => {
+      return <ExperimentBox cardData={exp} />;
+    })
+  }
+</div>

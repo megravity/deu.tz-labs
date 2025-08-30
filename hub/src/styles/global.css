@@ -6,6 +6,11 @@
 }
 
 @font-face {
+  src: url("/fonts/helvetica-neue-condensed-black.woff2");
+  font-family: "HelveticaNeueBold";
+}
+
+@font-face {
   src: url("/fonts/helvetica-neue-thin.woff2");
   font-family: "HelveticaNeueThin";
 }
@@ -17,8 +22,9 @@
 
 @theme inline {
   --font-display: "DxBloop";
-  --font-sans-bold: "HelveticaNeue";
-  --font-sans: "HelveticaNeueThin";
+  --font-sans: "HelveticaNeue";
+  --font-sans-thin: "HelveticaNeueThin";
+  --font-sans-bold: "HelveticaNeueBold";
 
   --color-background: #1A1D20;
   --color-foreground: #FFFFFF;
@@ -41,4 +47,5 @@
 
 body {
   background-color: var(--color-background);
+  color: var(--color-foreground)
 }

@@ -1,12 +1,14 @@
 ---
-import Footer from "../layouts/Footer.astro"
-import Skeleton from "../layouts/Skeleton.astro"
+import Experiments from "../components/Experiments.astro";
+import Footer from "../layouts/Footer.astro";
+import Header from "../layouts/Header.astro";
+import Skeleton from "../layouts/Skeleton.astro";
 ---
 
 <Skeleton>
-  <h1 class="text-foreground text-center text-7xl">
-    <span class="font-display outline-highlight-text">deu.tz</span>
-    <span class="font-sans-bold tracking-tighter">- LABS</span>
-  </h1>
+  <Header />
+  <main>
+    <Experiments />
+  </main>
   <Footer />
 </Skeleton>
