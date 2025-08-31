@@ -53,7 +53,8 @@
         "useSelfClosingElements": "on"
       },
       "suspicious": {
-        "noUnassignedVariables": "on"
+        "noUnassignedVariables": "on",
+        "noConfusingVoidType": "off"
       }
     }
   },
