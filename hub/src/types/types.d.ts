@@ -8,7 +8,3 @@ export interface CardData {
   url: string;
   sourceRepo: string;
 }
-
-declare module "../../public/mock-manifest.json" {
-  export const experiments: CardData[];
-}

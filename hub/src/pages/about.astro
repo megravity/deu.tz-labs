@@ -1,0 +1,40 @@
+---
+import Footer from "../layouts/Footer.astro";
+import Header from "../layouts/Header.astro";
+import Skeleton from "../layouts/Skeleton.astro";
+---
+
+<Skeleton>
+  <Header />
+  <section class="mx-auto mt-36 w-1/2 text-2xl">
+    <p class="mb-8">
+      Labs is a repository dedicated to exploration, prototyping, and
+      documenting experiments. It serves as a safe environment to validate ideas
+      before they evolve into production-ready projects. Each entry in Labs is
+      both an archive and a stepping stone.
+    </p>
+    <p>
+      If you like what you see you can reach me via:
+      <ul class="list-inside">
+        <li class="mt-4 ml-4">
+          <a href="mailto:marvin@deu.tz" class="hover:text-highlight underline"
+            >marvin@deu.tz</a
+          >
+        </li>
+        <li class="ml-4">
+          <a
+            href="https://deu.tz"
+            target="_blank"
+            class="hover:text-highlight underline">deu.tz</a
+          >
+        </li>
+        <li class="ml-4">
+          <a href="#" class="hover:text-highlight underline"
+            >deutz-krueger.com</a
+          >
+        </li>
+      </ul>
+    </p>
+  </section>
+</Skeleton>
+<Footer />
