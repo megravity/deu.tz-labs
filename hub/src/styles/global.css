@@ -28,7 +28,7 @@
 
   --color-background: #1A1D20;
   --color-foreground: #FFFFFF;
-  --color-highlight: oklch(82.586% 0.09784 349.844);
+  --color-highlight: #f7accf;
 
   --shadow-text-offset: 2px;
   --shadow-text-offset-negative: calc(var(--shadow-text-offset) * -1);
@@ -47,9 +47,9 @@
 
 @utility card-3d-shadow {
   box-shadow: 
-    0 2px 8px oklch(82.586% 0.09784 349.844 / 0.48),
-    0 2px 8px oklch(82.586% 0.09784 349.844 / 0.482),
-    0 16px 96px oklch(82.586% 0.09784 349.844 / 0.482);
+    0 2px 8px oklch(90.822% 0.05706 348.428 / 0.213),
+    0 2px 8px oklch(82.586% 0.09784 349.844 / 0.321),
+    0 16px 96px oklch(82.586% 0.09784 349.844 / 0.182);
 }
 
 @utility card-3d-slab-before {
@@ -77,6 +77,34 @@
 }
 
 body {
-  background-color: var(--color-background);
-  color: var(--color-foreground)
+  background-color: #1a1d20;
+  background-image: linear-gradient(to left bottom, oklch(0.2289 0.0074 248.15),oklch(0.1897 0.0153 347.14),oklch(0.2074 0.0149 346.93) , oklch(0.2231 0.0175 352.74), oklch(0.2376 0.0194 349.68), oklch(0.2533 0.0227 349.48), oklch(0.3052 0.0298 350.65),oklch(0.3588 0.0364 351.3), oklch(0.4109 0.0434 349.72),oklch(0.5147 0.0571 350.01) ,oklch(0.6184 0.0716 349.61) , oklch(0.7227 0.0836 349.77), oklch(0.8259 0.0978 349.9));
+  background-size: 400% 400%;
+  height: 100vh;
+  backdrop-filter:  hue-rotate(0deg) saturate(0) blur(500px);
+  color: var(--color-foreground);
+
+  animation: saturate 30s ease infinite;
+  overflow-x: hidden;
+  overflow-y: hidden;
+}
+@keyframes saturate {
+  0% {
+  backdrop-filter: saturate(10);
+  background-position: 0% 50%;
+  filter: hue-rotate(15deg);
+  backdrop-filter: blur(300px);
+  }
+  30% {
+    backdrop-filter: saturate(12);
+		background-position: 100% 50%;
+    filter: hue-rotate(15deg);
+    backdrop-filter: blur(1000px);
+  }
+  100% {
+    backdrop-filter: saturate(10);
+    		background-position: 0% 50%;
+    filter: hue-rotate(5deg);
+    backdrop-filter: blur(300px);
+  }
 }
