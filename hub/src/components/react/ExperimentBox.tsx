@@ -9,15 +9,19 @@ export default function ExperimentBox(props: Props) {
   return (
     <div
       id={cardData.id}
-      className="text-background relative flex aspect-square h-64 flex-col justify-between rounded-md bg-white px-3 py-8 outline-2 outline-white"
+      className="card-3d-shadow text-background relative flex aspect-square h-45 translate-3d rotate-x-10 rotate-y-7 rotate-z-5 transform-gpu flex-col justify-between rounded-md bg-white px-3 py-8 transform-3d"
     >
-      <p className="bg-highlight absolute -top-3 -left-3 rounded-sm px-2 py-1 text-white">
-        {cardData.framework}
-      </p>
       <h3 className="text-xl">{cardData.title}</h3>
       <div className="font-sans-thin flex justify-between text-2xl">
-        <a href={cardData.url}>Live</a>
-        <a href={cardData.sourceRepo}>Code</a>
+        <a
+          href={cardData.url}
+          className="underline decoration-zinc-700 underline-offset-1"
+        >
+          Live
+        </a>
+        <a href={cardData.sourceRepo} className="underline underline-offset-1">
+          Code
+        </a>
       </div>
     </div>
   );
